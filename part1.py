@@ -13,12 +13,7 @@ def format_nums(x: str) -> str:
     for n in x.split('\n'):
         temp += '0' if not n else f'{n[0]}{n[-1]}\n'
     
-    return temp
+    return sum(int(n) for n in temp.split())
 
-def calc_total(x: str) -> int:
-    return sum(int(n) for n in x.split())
 
-def main() -> None:
-    print(calc_total(format_nums(filter_for_nums(get_data()))))
-
-main()
+print(format_nums(filter_for_nums(get_data())))
