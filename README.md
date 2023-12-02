@@ -6,7 +6,7 @@
 - the calibration number can be found by combining the first and last numbers in the character sequence on each new line
 
 ## Tools
-- Python (primary for serious)
+- Python
 - Vim
 
 ## Attribution
